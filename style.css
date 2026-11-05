@@ -8,7 +8,7 @@
 body, html {
     width: 100%;
     height: 100vh;
-    height: 100dvh; /* Utilise la hauteur dynamique de l'écran mobile sans les barres cachées */
+    height: 100dvh;
     overflow: hidden;
     font-family: sans-serif;
     background-color: #000;
@@ -24,7 +24,6 @@ body, html {
     position: relative;
 }
 
-/* Le lecteur vidéo prend tout l'écran */
 #reader {
     width: 100% !important;
     height: 100% !important;
@@ -34,7 +33,7 @@ body, html {
 #reader video {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Remplit tout l'écran sans déformation */
+    object-fit: cover !important;
 }
 
 #instructions {
@@ -49,7 +48,6 @@ body, html {
     z-index: 10;
 }
 
-/* Écran de feedback plein écran */
 #result-screen {
     position: fixed;
     top: 0;
@@ -66,7 +64,6 @@ body, html {
 
 #result-text {
     color: white;
-    /* Centrer le texte */
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
