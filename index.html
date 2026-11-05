@@ -8,23 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Inclusion de la bibliothèque de scan de code-barres -->
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 </head>
 <body>
 
-    <!-- Écran de scan -->
     <div id="scanner-container">
         <div id="reader"></div>
         <div id="instructions">Présentez un code-barres</div>
     </div>
 
-    <!-- Écran de résultat (Vert / Rouge) -->
-    <!-- Écran de résultat (Vert / Rouge) -->
     <div id="result-screen" class="hidden">
         <div id="result-content">
             <div id="result-text">SUCCÈS</div>
-            <!-- Le bouton "Carte suivante" -->
             <button id="next-btn" class="hidden">Scanner la carte suivante</button>
         </div>
     </div>
