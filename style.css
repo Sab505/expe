@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh; /* Utilise la hauteur dynamique de l'écran mobile sans les barres cachées */
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+#scanner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Le lecteur vidéo prend tout l'écran */
+#reader {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
+#reader video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Remplit tout l'écran sans déformation */
+}
+
+#instructions {
+    position: absolute;
+    bottom: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Écran de feedback plein écran */
+#result-screen {
+    position: fixed;
+    top: 0;
+    padding: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+#result-text {
+    color: white;
+    /* Centrer le texte */
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#next-btn {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: semi-bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease;
+}
+
+#next-btn:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.bg-green {
+    background-color: #2ecc71 !important;
+}
+
+.bg-red {
+    background-color: #e74c3c !important;
+}
